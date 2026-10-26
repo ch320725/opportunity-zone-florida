@@ -62,3 +62,9 @@ Full list: `3175-palm-beach-blvd-neighbors.csv` (20 parcels, LeePA GIS). Cross-s
 - 3164 – ALMANZAR RAMON, North Port (store/office/res, $234,258)
 - 3194 – GET THE HAMMER INVESTMENTS LLC (auto sales); 3134 HUGE AUTO SALES INC; 3036 FISHER CHARLES (auto sales); 3245/3265 MANGUAL PROPERTY HOLDINGS ONE (auto sales $890,760)
 Corridor is an established used-car row — good fit for a dealership.
+
+## Open-items follow-up (2026-10-26)
+- **3173 folio confirmed:** LeePA DisplayParcel FolioID=10245384 returns "3173 PALM BEACH BLVD".
+- **Taxes/delinquency (both folios):** NOT retrieved. Lee Tax Collector search (lee.county-taxes.com, Grant Street) returns HTTP 403 Cloudflare "Just a moment" challenge to curl. Needs browser: https://lee.county-taxes.com/public/search/property_tax?search_query=10245383 and ...=10245384. No balances/certificates known.
+- **Code enforcement:** NOT retrieved. fortmyers.elaws.us timed out (no connection). Needs browser or call City Code Enforcement 239-321-7940.
+- **BTR / permits:** NOT retrieved. Lee TC business-tax search also Cloudflare 403; City BTR & EnerGov are JS apps — needs browser.
