@@ -1,0 +1,271 @@
+county,category,key,field,old,new,note
+Lee,shortlist,(summary),unique parcels,254,254,+0 / -0; rows 254 -> 254 after de-duplicating FDOR duplicate records
+Lee,parcels,(summary),rows,504,504,unique parcel_id+tract; 504 unique in baseline
+Lee,listing OZ check,"954 Capetown Ave, Lehigh Acres, FL 33974",oz_status,East Lehigh OZ (listing states),IN OZ 12071040308,
+Lee,listing DOM,"954 Capetown Ave, Lehigh Acres, FL 33974",days_on_market,169.0,182,
+Lee,listing OZ check,"1022 Asther St E, Lehigh Acres, FL 33974",oz_status,East Lehigh OZ (listing states),IN OZ 12071040314,
+Lee,listing DOM,"1022 Asther St E, Lehigh Acres, FL 33974",days_on_market,170.0,182,
+Lee,listing OZ check,"933 Commodore St, Lehigh Acres, FL 33974",oz_status,East Lehigh OZ (listing states),IN OZ 12071040308,
+Lee,listing price,"1048 Redbank Ave, Lehigh Acres, FL 33974",list_price,29900,44900,"BASELINE CORRECTION: 10-25 row showed $29,900 / MLS 2026019254 - that MLS is actually 385 McArthur Blvd. Real listing $44,900 (reduced from $49,900 on 2026-07-15), RS-1; owner ZYGMUNT CATHERINE S; also on Zillow https://www.zillow.com/homedetails/1048-Redbank-Ave-Lehigh-Acres-FL-33974/103417928_zpid/ (Zillow DOM 173)"
+Lee,listing OZ check,"1048 Redbank Ave, Lehigh Acres, FL 33974",oz_status,East Lehigh OZ (listing states),IN OZ (parcel) 12071040308,
+Lee,listing OZ check,"3608 Sammy Watkins Ave, Fort Myers, FL 33916",oz_status,Fort Myers/Dunbar (near OZ; tract unverified),IN OZ (parcel) 12071000600,
+Lee,listing status,"1001 Polk St, Fort Myers, FL 33916",status,listed,Not re-checked (LoopNet blocked),
+Lee,listing OZ check,"1001 Polk St, Fort Myers, FL 33916",oz_status,Fort Myers/Dunbar (near OZ; tract unverified),NOT in OZ ~0.46 km from 12071000503,
+Lee,listing OZ check,"3696 Dr Martin Luther King Jr Blvd, Fort Myers, FL 33916",oz_status,Fort Myers/Dunbar (near OZ; tract unverified),IN OZ 12071000600,
+Lee,listing status,"2134-2136 Alicia St, Fort Myers, FL 33901",status,listed,Not re-checked (LoopNet blocked),
+Lee,listing OZ check,"2134-2136 Alicia St, Fort Myers, FL 33901",oz_status,Fort Myers central (near OZ; tract unverified),NOT in OZ ~0.09 km from 12071000600,
+Lee,listing status,"50 Mildred Dr, Fort Myers, FL 33901",status,listed,Not re-checked (LoopNet blocked),
+Lee,listing OZ check,"50 Mildred Dr, Fort Myers, FL 33901",oz_status,Fort Myers central (near OZ; tract unverified),NOT in OZ ,
+Lee,listing status,"2249 Cleveland Ave, Fort Myers, FL 33901",status,listed,Not re-checked (LoopNet blocked),
+Lee,listing OZ check,"2249 Cleveland Ave, Fort Myers, FL 33901",oz_status,Fort Myers / Cleveland Ave-US41 (near OZ; tract unverified),NOT in OZ ,
+Lee,listing status,"3615 Central Ave, Fort Myers, FL 33901",status,listed,Not re-checked (LoopNet blocked),
+Lee,listing OZ check,"3615 Central Ave, Fort Myers, FL 33901",oz_status,Fort Myers central (near OZ; tract unverified),NOT in OZ ,
+Lee,listing status,"11118 S Cleveland Ave, Fort Myers, FL 33907",status,listed,Not re-checked (LoopNet blocked),
+Lee,listing OZ check,"11118 S Cleveland Ave, Fort Myers, FL 33907",oz_status,US41/S Cleveland corridor (tract unverified),NOT in OZ ,
+Lee,listing status,"5450-5460 5th Ave, Fort Myers, FL 33907",status,listed,Not re-checked (LoopNet blocked),
+Lee,listing OZ check,"5450-5460 5th Ave, Fort Myers, FL 33907",oz_status,Fort Myers (tract unverified),NOT in OZ ,
+Lee,listing status,"164 Pondella Rd, North Fort Myers, FL 33903",status,listed,Not re-checked (LoopNet blocked),
+Lee,listing OZ check,"164 Pondella Rd, North Fort Myers, FL 33903",oz_status,North Fort Myers (OZ area; tract unverified),NOT in OZ ~0.5 km from 12071020502,
+Lee,listing status,"18031 State Road 31, North Fort Myers, FL 33917",status,listed,Not re-checked (LoopNet blocked),
+Lee,listing OZ check,"18031 State Road 31, North Fort Myers, FL 33917",oz_status,North Fort Myers (OZ area; tract unverified),NOT in OZ ,
+Lee,listing status,"13400 Palm Beach Blvd, Fort Myers, FL 33905",status,listed,Not re-checked (LoopNet blocked),
+Lee,listing OZ check,"13400 Palm Beach Blvd, Fort Myers, FL 33905",oz_status,East Fort Myers/Palm Beach Blvd (tract unverified),NOT in OZ ,
+Lee,listing status,"4901 Buckingham Rd, Fort Myers, FL 33905",status,listed,Not re-checked (LoopNet blocked),
+Lee,listing OZ check,"4901 Buckingham Rd, Fort Myers, FL 33905",oz_status,East Fort Myers (tract unverified),NOT in OZ ,
+Lee,listing status,"7760 Bogart Dr, Fort Myers, FL 33917",status,listed,SOLD / stale,
+Lee,listing OZ check,"7760 Bogart Dr, Fort Myers, FL 33917",oz_status,Bogart Dr (tract unverified),IN OZ 12071020300,
+Lee,listing status,"15855 Pine Ridge Rd, Fort Myers, FL 33908",status,listed,Not re-checked (LoopNet blocked),
+Lee,listing OZ check,"15855 Pine Ridge Rd, Fort Myers, FL 33908",oz_status,San Carlos/Iona area (tract unverified),NOT in OZ ,
+Lee,listing status,"16231 Lee Rd, Fort Myers, FL 33912",status,listed,Not re-checked (LoopNet blocked),
+Lee,listing OZ check,"16231 Lee Rd, Fort Myers, FL 33912",oz_status,San Carlos area (tract unverified),NOT in OZ ,
+Lee,listing status,"16001 Cintron Pl, Fort Myers, FL 33912",status,listed,Not re-checked (LoopNet blocked),
+Lee,listing OZ check,"16001 Cintron Pl, Fort Myers, FL 33912",oz_status,San Carlos area (tract unverified),NOT in OZ ,
+Lee,listing new to tracker,"385 McArthur Blvd, Lehigh Acres, FL 33974",list_price,,29900,IN OZ 12071040314; Active
+Lee,listing new to tracker,"850 Genoa Ave S, Lehigh Acres, FL 33974",list_price,,17900,IN OZ 12071040308; Active
+Lee,listing new to tracker,"540 Columbus Blvd S, Lehigh Acres, FL 33974",list_price,,19900,IN OZ 12071040314; Active
+Lee,listing new to tracker,"3428 Meadow Rd, Lehigh Acres, FL 33974",list_price,,999999,IN OZ (parcel) 12071040308; Active
+Lee,listing new to tracker,"203 Del Prado Blvd N, Cape Coral, FL 33909",list_price,,799000,IN OZ 12071010302; Active
+Lee,listing new to tracker,"3171 Dr Martin Luther King Jr Blvd, Fort Myers, FL 33916",list_price,,850000,IN OZ 12071000502; Status unverified (LoopNet blocked)
+Lee,listing new to tracker,"1407 Lincoln Ave, North Fort Myers, FL 33903",list_price,,139000,IN OZ 12071020502; Status unverified (LoopNet blocked)
+Lee,Zillow coverage (new source),(summary),in-OZ Zillow listings,,2608,121 with Zillow DOM<=7 (listed this week)
+Lee,Zillow new this week (DOM<=7),"977 Winsome Rd, North Fort Myers, FL 33903",list_price,,260000.0,12071010302 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/977-Winsome-Rd-North-Fort-Myers-FL-33903/45416319_zpid/
+Lee,Zillow new this week (DOM<=7),"1064 Winding Pines Cir Unit 105, Cape Coral, FL 33909",list_price,,210000.0,12071010302 Zillow (CONDO) https://www.zillow.com/homedetails/1064-Winding-Pines-Cir-UNIT-105-Cape-Coral-FL-33909/119979138_zpid/
+Lee,Zillow new this week (DOM<=7),"1038 RIDGEWAY DRIVE, NORTH FORT MYERS, FL 33903",list_price,,264990.0,12071010302 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/1038-Ridgeway-Dr-North-Fort-Myers-FL-33903/45416435_zpid/
+Lee,Zillow new this week (DOM<=7),"1141 Van Loon Commons Cir APT 301, Cape Coral, FL 33909",list_price,,179900.0,12071010307 Zillow (CONDO) https://www.zillow.com/homedetails/1141-Van-Loon-Commons-Cir-APT-301-Cape-Coral-FL-33909/89570633_zpid/
+Lee,Zillow new this week (DOM<=7),"8 NE 8th Pl, Cape Coral, FL 33909",list_price,,459900.0,12071010307 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/8-NE-8th-Pl-Cape-Coral-FL-33909/45406075_zpid/
+Lee,Zillow new this week (DOM<=7),"3027 2nd ST, FORT MYERS, FL 33916",list_price,,259500.0,12071000502 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/3027-2nd-St-Fort-Myers-FL-33916/103326241_zpid/
+Lee,Zillow new this week (DOM<=7),"1731 Raleigh St, Fort Myers, FL 33916",list_price,,249990.0,12071000502 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/1731-Raleigh-St-Fort-Myers-FL-33916/45463535_zpid/
+Lee,Zillow new this week (DOM<=7),"3305 Handy Ct, Fort Myers, FL 33916",list_price,,41490.0,12071000600 Zillow (LOT) https://www.zillow.com/homedetails/3305-Handy-Ct-Fort-Myers-FL-33916/103385353_zpid/
+Lee,Zillow new this week (DOM<=7),"2331 JAYLEN WATKINS STREET, FORT MYERS, FL 33916",list_price,,214900.0,12071000600 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/2331-Jaylen-Watkins-St-Fort-Myers-FL-33916/62840610_zpid/
+Lee,Zillow new this week (DOM<=7),"123 Amber Ave, North Fort Myers, FL 33917",list_price,,84000.0,12071020300 Zillow (MANUFACTURED) https://www.zillow.com/homedetails/123-Amber-Ave-North-Fort-Myers-FL-33917/45555459_zpid/
+Lee,Zillow new this week (DOM<=7),"15834 Shoreline Blvd #218, North Fort Myers, FL 33917",list_price,,45000.0,12071020300 Zillow (MANUFACTURED) https://www.zillow.com/homedetails/15834-Shoreline-Blvd-218-North-Fort-Myers-FL-33917/466099902_zpid/
+Lee,Zillow new this week (DOM<=7),"8065 Ebson Dr, North Fort Myers, FL 33917",list_price,,106900.0,12071020300 Zillow (MANUFACTURED) https://www.zillow.com/homedetails/8065-Ebson-Dr-North-Fort-Myers-FL-33917/45491684_zpid/
+Lee,Zillow new this week (DOM<=7),"8116 Penny Dr, North Fort Myers, FL 33917",list_price,,5.0,12071020300 Zillow (MANUFACTURED) https://www.zillow.com/homedetails/8116-Penny-Dr-North-Fort-Myers-FL-33917/45491669_zpid/
+Lee,Zillow new this week (DOM<=7),"369 Lakeview Dr, North Fort Myers, FL 33917",list_price,,289900.0,12071020502 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/369-Lakeview-Dr-North-Fort-Myers-FL-33917/45555160_zpid/
+Lee,Zillow new this week (DOM<=7),"5712 Captain John Smith Loop, North Fort Myers, FL 33917",list_price,,137900.0,12071020502 Zillow (CONDO) https://www.zillow.com/homedetails/5712-Captain-John-Smith-Loop-North-Fort-Myers-FL-33917/61257735_zpid/
+Lee,Zillow new this week (DOM<=7),"14510 Paul Revere Loop, North Fort Myers, FL 33917",list_price,,164923.0,12071020502 Zillow (CONDO) https://www.zillow.com/homedetails/14510-Paul-Revere-Loop-North-Fort-Myers-FL-33917/61257854_zpid/
+Lee,Zillow new this week (DOM<=7),"5612 Captain John Smith Loop #22, North Fort Myers, FL 33917",list_price,,37900.0,12071020502 Zillow (MANUFACTURED) https://www.zillow.com/homedetails/5612-Captain-John-Smith-Loop-22-North-Fort-Myers-FL-33917/2060729141_zpid/
+Lee,Zillow new this week (DOM<=7),"5573 FOXLAKE DRIVE, NORTH FORT MYERS, FL 33917",list_price,,175000.0,12071020502 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/5573-Foxlake-Dr-North-Fort-Myers-FL-33917/45556683_zpid/
+Lee,Zillow new this week (DOM<=7),"5518 Virginia Dare Ln, North Fort Myers, FL 33917",list_price,,89900.0,12071020502 Zillow (CONDO) https://www.zillow.com/homedetails/5518-Virginia-Dare-Ln-North-Fort-Myers-FL-33917/61257940_zpid/
+Lee,Zillow new this week (DOM<=7),"15466 Crystal Lake DR, NORTH FORT MYERS, FL 33917",list_price,,148000.0,12071020502 Zillow (TOWNHOUSE) https://www.zillow.com/homedetails/15466-Crystal-Lake-Dr-North-Fort-Myers-FL-33917/45556865_zpid/
+Lee,Zillow new this week (DOM<=7),"3331 Cherry Palm Dr, North Fort Myers, FL 33917",list_price,,569000.0,12071020201 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/3331-Cherry-Palm-Dr-North-Fort-Myers-FL-33917/339999629_zpid/
+Lee,Zillow new this week (DOM<=7),"20175 Camino Torcido Loop, North Fort Myers, FL 33917",list_price,,289000.0,12071020201 Zillow (MULTI_FAMILY) https://www.zillow.com/homedetails/20175-Camino-Torcido-Loop-North-Fort-Myers-FL-33917/448766664_zpid/
+Lee,Zillow new this week (DOM<=7),"326 NW 14th St, Cape Coral, FL 33993",list_price,,332500.0,12071010201 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/326-NW-14th-St-Cape-Coral-FL-33993/103416728_zpid/
+Lee,Zillow new this week (DOM<=7),"119 NW 3RD PLACE, CAPE CORAL, FL 33993",list_price,,359900.0,12071010201 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/119-NW-3rd-Pl-Cape-Coral-FL-33993/81889137_zpid/
+Lee,Zillow new this week (DOM<=7),"1021 Santa Barbara Blvd N, Cape Coral, FL 33993",list_price,,58000.0,12071010201 Zillow (LOT) https://www.zillow.com/homedetails/1021-Santa-Barbara-Blvd-N-Cape-Coral-FL-33993/103267852_zpid/
+Lee,Zillow new this week (DOM<=7),"306 NW 11th St, Cape Coral, FL 33993",list_price,,392000.0,12071010201 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/306-NW-11th-St-Cape-Coral-FL-33993/103364028_zpid/
+Lee,Zillow new this week (DOM<=7),"4649-4651 25th St SW, Lehigh Acres, FL 33973",list_price,,370000.0,12071040122 Zillow (MULTI_FAMILY) https://www.zillow.com/homedetails/4649-4651-25th-St-SW-Lehigh-Acres-FL-33973/2063230789_zpid/
+Lee,Zillow new this week (DOM<=7),"4501/4503 26th ST SW, LEHIGH ACRES, FL 33973",list_price,,63000.0,12071040122 Zillow (LOT) https://www.zillow.com/homedetails/4501-4503-26th-St-SW-Lehigh-Acres-FL-33973/103422107_zpid/
+Lee,Zillow new this week (DOM<=7),"4642 24TH STREET SW LOT 27, LEHIGH ACRES, FL 33973",list_price,,60000.0,12071040122 Zillow (LOT) https://www.zillow.com/homedetails/4642-24th-St-SW-LOT-27-Lehigh-Acres-FL-33973/466167346_zpid/
+Lee,Zillow new this week (DOM<=7),"4534 30th ST SW, LEHIGH ACRES, FL 33973",list_price,,530000.0,12071040122 Zillow (MULTI_FAMILY) https://www.zillow.com/homedetails/4534-30th-St-SW-Lehigh-Acres-FL-33973/466115673_zpid/
+Lee,Zillow new this week (DOM<=7),"1550 Gretchen AVE S, LEHIGH ACRES, FL 33973",list_price,,530000.0,12071040122 Zillow (MULTI_FAMILY) https://www.zillow.com/homedetails/1550-Gretchen-Ave-S-Lehigh-Acres-FL-33973/466112292_zpid/
+Lee,Zillow new this week (DOM<=7),"1521 Haviland Ave S, Lehigh Acres, FL 33973",list_price,,490000.0,12071040122 Zillow (MULTI_FAMILY) https://www.zillow.com/homedetails/1521-Haviland-Ave-S-Lehigh-Acres-FL-33973/103299275_zpid/
+Lee,Zillow new this week (DOM<=7),"832 Clow St E, Lehigh Acres, FL 33974",list_price,,200255.0,12071040313 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/832-Clow-St-E-Lehigh-Acres-FL-33974/103200618_zpid/
+Lee,Zillow new this week (DOM<=7),"817 Frederick Reid ST E, LEHIGH ACRES, FL 33974",list_price,,358900.0,12071040313 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/817-Frederick-Reid-St-E-Lehigh-Acres-FL-33974/103365441_zpid/
+Lee,Zillow new this week (DOM<=7),"815 Frederick Reid ST E, LEHIGH ACRES, FL 33974",list_price,,358900.0,12071040313 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/815-Frederick-Reid-St-E-Lehigh-Acres-FL-33974/103342804_zpid/
+Lee,Zillow new this week (DOM<=7),"473 Long AVE S, LEHIGH ACRES, FL 33974",list_price,,301990.0,12071040313 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/473-Long-Ave-S-Lehigh-Acres-FL-33974/103367429_zpid/
+Lee,Zillow new this week (DOM<=7),"194 Karlow Ave S, Lehigh Acres, FL 33974",list_price,,339900.0,12071040313 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/194-Karlow-Ave-S-Lehigh-Acres-FL-33974/103261246_zpid/
+Lee,Zillow new this week (DOM<=7),"184 Karlow Ave #0, Lehigh Acres, FL 33974",list_price,,274999.0,12071040313 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/184-Karlow-Ave-0-Lehigh-Acres-FL-33974/2082697260_zpid/
+Lee,Zillow new this week (DOM<=7),"1111 Gunby Ave S, Lehigh Acres, FL 33974",list_price,,322000.0,12071040308 Zillow (MANUFACTURED) https://www.zillow.com/homedetails/1111-Gunby-Ave-S-Lehigh-Acres-FL-33974/103298332_zpid/
+Lee,Zillow new this week (DOM<=7),"867 Millpond St E, Lehigh Acres, FL 33974",list_price,,279000.0,12071040308 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/867-Millpond-St-E-Lehigh-Acres-FL-33974/103245617_zpid/
+Lee,Zillow new this week (DOM<=7),"3057 Meadow Rd, Lehigh Acres, FL 33974",list_price,,26000.0,12071040308 Zillow (LOT) https://www.zillow.com/homedetails/3057-Meadow-Rd-Lehigh-Acres-FL-33974/103218003_zpid/
+Lee,Zillow new this week (DOM<=7),"7192 Chapel Creek LN, NORTH FORT MYERS, FL 33917",list_price,,499990.0,12071020201 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/7192-Chapel-Creek-Ln-North-Fort-Myers-FL-33917/460635903_zpid/
+Lee,Zillow new this week (DOM<=7),"6205 Imperial Dr #445, North Fort Myers, FL 33917",list_price,,19900.0,12071020201 Zillow (MANUFACTURED) https://www.zillow.com/homedetails/6205-Imperial-Dr-445-North-Fort-Myers-FL-33917/466217458_zpid/
+Lee,Zillow new this week (DOM<=7),"Goldfinch Plan, Solena",list_price,,313900.0,12071020201 Zillow (SINGLE_FAMILY) https://www.zillow.com/community/solena/460745126_zpid/
+Lee,Zillow new this week (DOM<=7),"7449 Florida Elm CT, NORTH FORT MYERS, FL 33917",list_price,,369990.0,12071020201 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/7449-Florida-Elm-Ct-North-Fort-Myers-FL-33917/455063605_zpid/
+Lee,Zillow new this week (DOM<=7),"17312 Green Buttonwood WAY, NORTH FORT MYERS, FL 33917",list_price,,499999.0,12071020201 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/17312-Green-Buttonwood-Way-North-Fort-Myers-FL-33917/439167534_zpid/
+Lee,Zillow new this week (DOM<=7),"310 Eland Dr, North Fort Myers, FL 33917",list_price,,99000.0,12071020201 Zillow (MANUFACTURED) https://www.zillow.com/homedetails/310-Eland-Dr-North-Fort-Myers-FL-33917/466089638_zpid/
+Lee,Zillow new this week (DOM<=7),"Palmary Plan, Del Webb Oak Creek",list_price,,427990.0,12071020201 Zillow (SINGLE_FAMILY) https://www.zillow.com/community/del-webb-oak-creek/2062666841_zpid/
+Lee,Zillow new this week (DOM<=7),"933 Fern ST E, LEHIGH ACRES, FL 33974",list_price,,29000.0,12071040314 Zillow (LOT) https://www.zillow.com/homedetails/933-Fern-St-E-Lehigh-Acres-FL-33974/103269485_zpid/
+Lee,Zillow new this week (DOM<=7),"548 Aspen Ave S, Lehigh Acres, FL 33974",list_price,,459000.0,12071040314 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/548-Aspen-Ave-S-Lehigh-Acres-FL-33974/89562701_zpid/
+Lee,Zillow new this week (DOM<=7),"567 Flamingo Ave S, Lehigh Acres, FL 33974",list_price,,5.0,12071040314 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/567-Flamingo-Ave-S-Lehigh-Acres-FL-33974/2068461023_zpid/
+Lee,Zillow new this week (DOM<=7),"424 Wilder Ave S, Lehigh Acres, FL 33974",list_price,,14200.0,12071040314 Zillow (LOT) https://www.zillow.com/homedetails/424-Wilder-Ave-S-Lehigh-Acres-FL-33974/103272131_zpid/
+Lee,Zillow new this week (DOM<=7),"422 Eisenhower Blvd, Lehigh Acres, FL 33974",list_price,,319000.0,12071040314 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/422-Eisenhower-Blvd-Lehigh-Acres-FL-33974/103428378_zpid/
+Lee,Zillow new this week (DOM<=7),"1125 Milwaukee Blvd, Lehigh Acres, FL 33974",list_price,,266000.0,12071040314 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/1125-Milwaukee-Blvd-Lehigh-Acres-FL-33974/338772575_zpid/
+Lee,Zillow new this week (DOM<=7),"515 Palao Ave S, Lehigh Acres, FL 33974",list_price,,18000.0,12071040314 Zillow (LOT) https://www.zillow.com/homedetails/515-Palao-Ave-S-Lehigh-Acres-FL-33974/103408714_zpid/
+Lee,Zillow new this week (DOM<=7),"518 Palao Ave S, Lehigh Acres, FL 33974",list_price,,17900.0,12071040314 Zillow (LOT) https://www.zillow.com/homedetails/518-Palao-Ave-S-Lehigh-Acres-FL-33974/103258178_zpid/
+Lee,Zillow new this week (DOM<=7),"553 NAPLES AVE S, LEHIGH ACRES, FL 33974",list_price,,24500.0,12071040314 Zillow (LOT) https://www.zillow.com/homedetails/553-Naples-Ave-S-Lehigh-Acres-FL-33974/103254307_zpid/
+Lee,Zillow new this week (DOM<=7),"555 Columbus Blvd, Lehigh Acres, FL 33974",list_price,,16800.0,12071040314 Zillow (LOT) https://www.zillow.com/homedetails/555-Columbus-Blvd-Lehigh-Acres-FL-33974/103420403_zpid/
+Lee,Zillow new this week (DOM<=7),"1117 Chiefland St E, Lehigh Acres, FL 33974",list_price,,19500.0,12071040314 Zillow (LOT) https://www.zillow.com/homedetails/1117-Chiefland-St-E-Lehigh-Acres-FL-33974/103384137_zpid/
+Lee,Zillow new this week (DOM<=7),"464 COLUMBUS BOULEVARD LOT 12, LEHIGH ACRES, FL 33974",list_price,,19500.0,12071040314 Zillow (LOT) https://www.zillow.com/homedetails/464-Columbus-Blvd-S-12-Lehigh-Acres-FL-33974/443942120_zpid/
+Lee,Zillow new this week (DOM<=7),"941 Binkley St E, Lehigh Acres, FL 33974",list_price,,80555.0,12071040314 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/941-Binkley-St-E-Lehigh-Acres-FL-33974/103355082_zpid/
+Lee,Zillow new this week (DOM<=7),"346 Austin Ave, Lehigh Acres, FL 33974",list_price,,21000.0,12071040314 Zillow (LOT) https://www.zillow.com/homedetails/346-Austin-Ave-Lehigh-Acres-FL-33974/444485663_zpid/
+Lee,Zillow new this week (DOM<=7),"121 Bremen Ave S, Lehigh Acres, FL 33974",list_price,,15900.0,12071040314 Zillow (LOT) https://www.zillow.com/homedetails/121-Bremen-Ave-S-Lehigh-Acres-FL-33974/103273985_zpid/
+Lee,Zillow new this week (DOM<=7),"944 Sunrise Blvd, Lehigh Acres, FL 33974",list_price,,258900.0,12071040314 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/944-Sunrise-Blvd-Lehigh-Acres-FL-33974/89560274_zpid/
+Lee,Zillow new this week (DOM<=7),"333 Lownde Ave S, Lehigh Acres, FL 33974",list_price,,359000.0,12071040314 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/333-Lownde-Ave-S-Lehigh-Acres-FL-33974/103199596_zpid/
+Lee,Zillow new this week (DOM<=7),"1237 Chrisholm St E, Lehigh Acres, FL 33974",list_price,,338000.0,12071040314 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/1237-Chrisholm-St-E-Lehigh-Acres-FL-33974/103319424_zpid/
+Lee,Zillow new this week (DOM<=7),"1242 Random St E, Lehigh Acres, FL 33974",list_price,,11900.0,12071040314 Zillow (LOT) https://www.zillow.com/homedetails/1242-Random-St-E-Lehigh-Acres-FL-33974/83006872_zpid/
+Lee,Zillow new this week (DOM<=7),"1124 Rambler St E, Lehigh Acres, FL 33974",list_price,,309900.0,12071040314 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/1124-Rambler-St-E-Lehigh-Acres-FL-33974/103387607_zpid/
+Lee,Zillow new this week (DOM<=7),"124 Nassau Ave, Lehigh Acres, FL 33974",list_price,,14500.0,12071040314 Zillow (LOT) https://www.zillow.com/homedetails/124-Nassau-Ave-Lehigh-Acres-FL-33974/444482674_zpid/
+Lee,Zillow new this week (DOM<=7),"324 NE 15th St, Cape Coral, FL 33909",list_price,,380000.0,12071010201 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/324-NE-15th-St-Cape-Coral-FL-33909/103281547_zpid/
+Lee,Zillow new this week (DOM<=7),"1005 NE 4th Place Cpe, Coral, FL 33909",list_price,,485000.0,12071010201 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/1005-NE-4th-Place-Cpe-Coral-FL-33909/466204603_zpid/
+Lee,Zillow new this week (DOM<=7),"1228 NE 6th Place Cpe, Coral, FL 33909",list_price,,389000.0,12071010201 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/1228-NE-6th-Place-Cpe-Coral-FL-33909/466185472_zpid/
+Lee,Zillow new this week (DOM<=7),"1322 NE 5th Pl, Cape Coral, FL 33909",list_price,,399000.0,12071010201 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/1322-NE-5th-Pl-Cape-Coral-FL-33909/103208689_zpid/
+Lee,Zillow new this week (DOM<=7),"2509 NW 3rd Pl, Cape Coral, FL 33993",list_price,,377535.0,12071010201 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/2509-NW-3rd-Pl-Cape-Coral-FL-33993/103406680_zpid/
+Lee,Zillow new this week (DOM<=7),"23 NW 24th Ter, Cape Coral, FL 33993",list_price,,378673.0,12071010201 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/23-NW-24th-Ter-Cape-Coral-FL-33993/103332550_zpid/
+Lee,Zillow new this week (DOM<=7),"1414 NE 6th Ave, Cape Coral, FL 33909",list_price,,419175.0,12071010201 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/1414-NE-6th-Ave-Cape-Coral-FL-33909/103279436_zpid/
+Lee,Zillow new this week (DOM<=7),"1803 Nelson Rd N, Cape Coral, FL 33993",list_price,,480000.0,12071010201 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/1803-Nelson-Rd-N-Cape-Coral-FL-33993/103315217_zpid/
+Lee,Zillow new this week (DOM<=7),"26 NW 16th TER, CAPE CORAL, FL 33993",list_price,,43700.0,12071010201 Zillow (LOT) https://www.zillow.com/homedetails/26-NW-16th-Ter-Cape-Coral-FL-33993/299263168_zpid/
+Lee,Zillow new this week (DOM<=7),"116 Diplomat PKWY W, CAPE CORAL, FL 33993",list_price,,51000.0,12071010201 Zillow (LOT) https://www.zillow.com/homedetails/116-Diplomat-Pkwy-W-Cape-Coral-FL-33993/450061564_zpid/
+Lee,Zillow new this week (DOM<=7),"110 NW 25th Ter, Cape Coral, FL 33993",list_price,,325000.0,12071010201 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/110-NW-25th-Ter-Cape-Coral-FL-33993/89564464_zpid/
+Lee,Zillow new this week (DOM<=7),"300 NW 18th St, Cape Coral, FL 33993",list_price,,459900.0,12071010201 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/300-NW-18th-St-Cape-Coral-FL-33993/103374506_zpid/
+Lee,Zillow new this week (DOM<=7),"2810 NW 4th PL, CAPE CORAL, FL 33993",list_price,,309900.0,12071010201 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/2810-NW-4th-Pl-Cape-Coral-FL-33993/103421796_zpid/
+Lee,Zillow new this week (DOM<=7),"2929 NW 6th Pl, Cape Coral, FL 33993",list_price,,332500.0,12071010201 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/2929-NW-6th-Pl-Cape-Coral-FL-33993/103230123_zpid/
+Lee,Zillow new this week (DOM<=7),"3030 NW 7th Pl, Cape Coral, FL 33993",list_price,,49900.0,12071010201 Zillow (LOT) https://www.zillow.com/homedetails/3030-NW-7th-Pl-Cape-Coral-FL-33993/103357167_zpid/
+Lee,Zillow new this week (DOM<=7),"2803 Nelson Rd N, Cape Coral, FL 33993",list_price,,54990.0,12071010201 Zillow (LOT) https://www.zillow.com/homedetails/2803-Nelson-Rd-N-Cape-Coral-FL-33993/103405944_zpid/
+Lee,Zillow new this week (DOM<=7),"702 NW Douglas Cir, Cape Coral, FL 33993",list_price,,284900.0,12071010201 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/702-NW-Douglas-Cir-Cape-Coral-FL-33993/103334331_zpid/
+Lee,Zillow new this week (DOM<=7),"2832 NW 6th AVE, CAPE CORAL, FL 33993",list_price,,255000.0,12071010201 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/2832-NW-6th-Ave-Cape-Coral-FL-33993/103261093_zpid/
+Lee,Zillow new this week (DOM<=7),"2914 Santa Barbara BLVD N, CAPE CORAL, FL 33993",list_price,,20999.0,12071010201 Zillow (LOT) https://www.zillow.com/homedetails/2914-Santa-Barbara-Blvd-N-Cape-Coral-FL-33993/103381676_zpid/
+Lee,Zillow new this week (DOM<=7),"29 NW 33RD TERRACE LOT 28, CAPE CORAL, FL 33993",list_price,,120000.0,12071010201 Zillow (LOT) https://www.zillow.com/homedetails/29-NW-33rd-Ter-LOT-28-Cape-Coral-FL-33993/466228991_zpid/
+Lee,Zillow new this week (DOM<=7),"23 NW 33RD TERRACE LOT 26, CAPE CORAL, FL 33993",list_price,,85000.0,12071010201 Zillow (LOT) https://www.zillow.com/homedetails/23-NW-33rd-Ter-LOT-26-Cape-Coral-FL-33993/466228913_zpid/
+Lee,Zillow new this week (DOM<=7),"29 NW 33rd Ter, Cape Coral, FL 33993",list_price,,120000.0,12071010201 Zillow (LOT) https://www.zillow.com/homedetails/29-NW-33rd-Ter-Cape-Coral-FL-33993/103207625_zpid/
+Lee,Zillow new this week (DOM<=7),"23 NW 33rd Ter, Cape Coral, FL 33993",list_price,,85000.0,12071010201 Zillow (LOT) https://www.zillow.com/homedetails/23-NW-33rd-Ter-Cape-Coral-FL-33993/103277294_zpid/
+Lee,Zillow new this week (DOM<=7),"2028 NE Juanita Pl, Cape Coral, FL 33909",list_price,,269900.0,12071010201 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/2028-NE-Juanita-Pl-Cape-Coral-FL-33909/81882431_zpid/
+Lee,Zillow new this week (DOM<=7),"1705 NE 2nd PL, CAPE CORAL, FL 33909",list_price,,293990.0,12071010201 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/1705-NE-2nd-Pl-Cape-Coral-FL-33909/103282214_zpid/
+Lee,Zillow new this week (DOM<=7),"339 NE 22nd Ter, Cape Coral, FL 33909",list_price,,299990.0,12071010201 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/339-NE-22nd-Ter-Cape-Coral-FL-33909/103356591_zpid/
+Lee,Zillow new this week (DOM<=7),"330 NE 17th St, Cape Coral, FL 33909",list_price,,332500.0,12071010201 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/330-NE-17th-St-Cape-Coral-FL-33909/103422179_zpid/
+Lee,Zillow new this week (DOM<=7),"1735 NE 1st Ave, Cape Coral, FL 33909",list_price,,699900.0,12071010201 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/1735-NE-1st-Ave-Cape-Coral-FL-33909/103226631_zpid/
+Lee,Zillow new this week (DOM<=7),"2016 NE 6th Pl, Cape Coral, FL 33909",list_price,,319990.0,12071010201 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/2016-NE-6th-Pl-Cape-Coral-FL-33909/103243867_zpid/
+Lee,Zillow new this week (DOM<=7),"1108 Plantation Rd, Lehigh Acres, FL 33974",list_price,,20000.0,12071040308 Zillow (LOT) https://www.zillow.com/homedetails/1108-Plantation-Rd-Lehigh-Acres-FL-33974/103381181_zpid/
+Lee,Zillow new this week (DOM<=7),"1139 Ebert St E, Lehigh Acres, FL 33974",list_price,,365000.0,12071040308 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/1139-Ebert-St-E-Lehigh-Acres-FL-33974/103404998_zpid/
+Lee,Zillow new this week (DOM<=7),"833 Harbour Ave S, Lehigh Acres, FL 33974",list_price,,182515.0,12071040308 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/833-Harbour-Ave-S-Lehigh-Acres-FL-33974/103323025_zpid/
+Lee,Zillow new this week (DOM<=7),"834 JOPONICA AVENUE S LOT 14, LEHIGH ACRES, FL 33974",list_price,,25000.0,12071040308 Zillow (LOT) https://www.zillow.com/homedetails/834-Joponica-Ave-S-LOT-14-Lehigh-Acres-FL-33974/466108629_zpid/
+Lee,Zillow new this week (DOM<=7),"934 Commodore St, Lehigh Acres, FL 33974",list_price,,20000.0,12071040308 Zillow (LOT) https://www.zillow.com/homedetails/934-Commodore-St-Lehigh-Acres-FL-33974/103205404_zpid/
+Lee,Zillow new this week (DOM<=7),"853 Gulf Ln, Lehigh Acres, FL 33974",list_price,,23000.0,12071040308 Zillow (LOT) https://www.zillow.com/homedetails/853-Gulf-Ln-Lehigh-Acres-FL-33974/103299417_zpid/
+Lee,Zillow new this week (DOM<=7),"608 Wabasso Ave S, Lehigh Acres, FL 33974",list_price,,22000.0,12071040308 Zillow (LOT) https://www.zillow.com/homedetails/608-Wabasso-Ave-S-Lehigh-Acres-FL-33974/103341214_zpid/
+Lee,Zillow new this week (DOM<=7),"610 Wabasso Ave S, Lehigh Acres, FL 33974",list_price,,21000.0,12071040308 Zillow (LOT) https://www.zillow.com/homedetails/610-Wabasso-Ave-S-Lehigh-Acres-FL-33974/337594330_zpid/
+Lee,Zillow new this week (DOM<=7),"637 Avon Ave S, Lehigh Acres, FL 33974",list_price,,193805.0,12071040308 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/637-Avon-Ave-S-Lehigh-Acres-FL-33974/103281151_zpid/
+Lee,Zillow new this week (DOM<=7),"QUAIL RIDGE Plan, Lehigh Acres Classic",list_price,,309990.0,12071040308 Zillow (SINGLE_FAMILY) https://www.zillow.com/community/lehigh-acres-classic/452290937_zpid/
+Lee,Zillow new this week (DOM<=7),"730 Genoa Ave S, Lehigh Acres, FL 33974",list_price,,29999.0,12071040308 Zillow (LOT) https://www.zillow.com/homedetails/730-Genoa-Ave-S-Lehigh-Acres-FL-33974/103200816_zpid/
+Lee,Zillow new this week (DOM<=7),"1042 DANFORTH Street, Lehigh Acres, FL 33974",list_price,,17000.0,12071040308 Zillow (LOT) https://www.zillow.com/homedetails/1042-Danforth-St-Lehigh-Acres-FL-33974/103224422_zpid/
+Lee,Zillow new this week (DOM<=7),"1044 DANFORTH Street, Lehigh Acres, FL 33974",list_price,,17000.0,12071040308 Zillow (LOT) https://www.zillow.com/homedetails/1044-Danforth-St-Lehigh-Acres-FL-33974/103282964_zpid/
+Lee,Zillow new this week (DOM<=7),"1115 JAGUAR BOULEVARD LOT 14, LEHIGH ACRES, FL 33974",list_price,,82000.0,12071040308 Zillow (LOT) https://www.zillow.com/homedetails/1115-Jaguar-Blvd-LOT-14-Lehigh-Acres-FL-33974/466178357_zpid/
+Lee,Zillow new this week (DOM<=7),"1120 Fontana ST E, LEHIGH ACRES, FL 33974",list_price,,410000.0,12071040308 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/1120-Fontana-St-E-Lehigh-Acres-FL-33974/448773952_zpid/
+Lee,Zillow new this week (DOM<=7),"1105 Morton St E, Lehigh Acres, FL 33974",list_price,,201990.0,12071040308 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/1105-Morton-St-E-Lehigh-Acres-FL-33974/103221999_zpid/
+Lee,Zillow new this week (DOM<=7),"642 Genoa Ave S, Lehigh Acres, FL 33974",list_price,,199995.0,12071040308 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/642-Genoa-Ave-S-Lehigh-Acres-FL-33974/103227803_zpid/
+Lee,Zillow new this week (DOM<=7),"1116 Milwaukee BLVD, LEHIGH ACRES, FL 33974",list_price,,21900.0,12071040308 Zillow (LOT) https://www.zillow.com/homedetails/1116-Milwaukee-Blvd-Lehigh-Acres-FL-33974/103223542_zpid/
+Lee,Zillow new this week (DOM<=7),"622 Beach AVE S, LEHIGH ACRES, FL 33974",list_price,,349999.0,12071040308 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/622-Beach-Ave-S-Lehigh-Acres-FL-33974/103290479_zpid/
+Lee,Zillow new this week (DOM<=7),"1041 GLADYS ST, LEHIGH ACRES, FL 33974",list_price,,29900.0,12071040308 Zillow (LOT) https://www.zillow.com/homedetails/1041-Gladys-St-Lehigh-Acres-FL-33974/103221259_zpid/
+Lee,Zillow new this week (DOM<=7),"1031 Winters St E, Lehigh Acres, FL 33974",list_price,,338000.0,12071040308 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/1031-Winters-St-E-Lehigh-Acres-FL-33974/103232463_zpid/
+Lee,Zillow new this week (DOM<=7),"1226 Milwaukee BLVD, LEHIGH ACRES, FL 33974",list_price,,224900.0,12071040308 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/1226-Milwaukee-Blvd-Lehigh-Acres-FL-33974/81884031_zpid/
+Lee,Zillow new this week (DOM<=7),"641 NAPLES AVE S, LEHIGH ACRES, FL 33974",list_price,,24500.0,12071040308 Zillow (LOT) https://www.zillow.com/homedetails/641-Naples-Ave-S-Lehigh-Acres-FL-33974/99337330_zpid/
+Collier,shortlist,(summary),unique parcels,195,195,+0 / -0; rows 203 -> 195 after de-duplicating FDOR duplicate records
+Collier,parcels,(summary),rows,266,257,unique parcel_id+tract; 257 unique in baseline
+Collier,listing OZ check,"W Main St & N 11th St, Immokalee, FL 34142",oz_status,Immokalee OZ (LoopNet: OZ Yes),IN OZ 12021011400,
+Collier,listing status,"1312 15th St N, Immokalee, FL 34142",status,listed,Status unverified (LoopNet blocked),
+Collier,listing OZ check,"1312 15th St N, Immokalee, FL 34142",oz_status,Immokalee OZ (LoopNet: OZ Yes),IN OZ 12021011400,
+Collier,listing status,"State Road 29, Immokalee, FL 34142",status,listed,Status unverified (LoopNet blocked),
+Collier,listing OZ check,"State Road 29, Immokalee, FL 34142",oz_status,Immokalee OZ (listing states),Unverified (no address) ,
+Collier,listing OZ check,"3933 Tollhouse Dr, Naples, FL 34114",oz_status,East Naples (near OZ; tract unverified),NOT in OZ ~1.6 km from nearest OZ,
+Collier,listing DOM,"3933 Tollhouse Dr, Naples, FL 34114",days_on_market,212.0,215,
+Collier,listing status,"3893 Mannix Dr #529, Naples, FL 34114",status,listed,Likely removed (URL redirects to search),
+Collier,listing OZ check,"3893 Mannix Dr #529, Naples, FL 34114",oz_status,East Naples (near OZ; tract unverified),NOT in OZ ,
+Collier,listing new to tracker,"602 W Main St, Immokalee, FL 34142",list_price,,Call for price,IN OZ 12021011400; Active
+Collier,listing new to tracker,"10001 Tamiami Trl E, Naples, FL 34113",list_price,,6500000,IN OZ 12021010802; For LEASE verified ($15/SF NNN); sale status unverified
+Collier,Zillow coverage (new source),(summary),in-OZ Zillow listings,,174,12 with Zillow DOM<=7 (listed this week)
+Collier,Zillow new this week (DOM<=7),"4050 Golden Gate PKWY #219, NAPLES, FL 34116",list_price,,110000.0,12021010411 Zillow (CONDO) https://www.zillow.com/homedetails/4050-Golden-Gate-Pkwy-APT-219-Naples-FL-34116/43764275_zpid/
+Collier,Zillow new this week (DOM<=7),"1012 WARDEN LN, IMMOKALEE, FL 34142",list_price,,250000.0,12021011301 Zillow (MANUFACTURED) https://www.zillow.com/homedetails/1012-Warden-Ln-Immokalee-FL-34142/60549455_zpid/
+Collier,Zillow new this week (DOM<=7),"5380 Floridan AVE, NAPLES, FL 34113",list_price,,419900.0,12021010802 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/5380-Floridan-Ave-Naples-FL-34113/43780872_zpid/
+Collier,Zillow new this week (DOM<=7),"8007 Preakness CT, NAPLES, FL 34113",list_price,,619000.0,12021010802 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/8007-Preakness-Ct-Naples-FL-34113/43750899_zpid/
+Collier,Zillow new this week (DOM<=7),"7915 MAHOGANY RUN LN #1114, NAPLES, FL 34113",list_price,,425000.0,12021010802 Zillow (CONDO) https://www.zillow.com/homedetails/7915-Mahogany-Run-Ln-APT-1114-Naples-FL-34113/66137629_zpid/
+Collier,Zillow new this week (DOM<=7),"8003 Panther TRL #704, NAPLES, FL 34113",list_price,,354900.0,12021010802 Zillow (CONDO) https://www.zillow.com/homedetails/8003-Panther-Trl-APT-704-Naples-FL-34113/54206167_zpid/
+Collier,Zillow new this week (DOM<=7),"8681 Mustang DR, NAPLES, FL 34113",list_price,,539900.0,12021010802 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/8681-Mustang-Dr-Naples-FL-34113/43779134_zpid/
+Collier,Zillow new this week (DOM<=7),"9146 Chula Vista St Unit 12905, Naples, FL 34113",list_price,,379500.0,12021010802 Zillow (CONDO) https://www.zillow.com/homedetails/9146-Chula-Vista-St-UNIT-12905-Naples-FL-34113/81803091_zpid/
+Collier,Zillow new this week (DOM<=7),"8520 Mystic Greens WAY #406, NAPLES, FL 34113",list_price,,860000.0,12021010802 Zillow (CONDO) https://www.zillow.com/homedetails/8520-Mystic-Greens-Way-APT-406-Naples-FL-34113/43779244_zpid/
+Collier,Zillow new this week (DOM<=7),"9093 Capistrano ST S #7501, NAPLES, FL 34113",list_price,,375000.0,12021010802 Zillow (TOWNHOUSE) https://www.zillow.com/homedetails/9093-Capistrano-St-S-UNIT-7501-Naples-FL-34113/81801738_zpid/
+Collier,Zillow new this week (DOM<=7),"9138 Chula Vista ST #12703, NAPLES, FL 34113",list_price,,274900.0,12021010802 Zillow (CONDO) https://www.zillow.com/homedetails/9138-Chula-Vista-St-UNIT-12703-Naples-FL-34113/81793740_zpid/
+Collier,Zillow new this week (DOM<=7),"5395 Carolina AVE, NAPLES, FL 34113",list_price,,499000.0,12021010802 Zillow (MULTI_FAMILY) https://www.zillow.com/homedetails/5395-Carolina-Ave-Naples-FL-34113/299347790_zpid/
+Charlotte,data enrichment,(all),zoning,blank on 125 parcels,filled from Charlotte County zoning layer,not a real zoning change
+Charlotte,shortlist,(summary),unique parcels,51,51,+0 / -0; rows 95 -> 51 after de-duplicating FDOR duplicate records
+Charlotte,parcels,(summary),rows,180,128,unique parcel_id+tract; 128 unique in baseline
+Charlotte,listing status,"3092 Tamiami Trl, Port Charlotte, FL 33952",status,listed,Status unverified (LoopNet blocked; still indexed),
+Charlotte,listing OZ check,"3092 Tamiami Trl, Port Charlotte, FL 33952",oz_status,12015020700 likely (Charlotte Harbor; listing says OZ),IN OZ 12015020700,
+Charlotte,listing status,"4732 Tamiami Trl, Port Charlotte, FL 33980",status,listed,Not re-checked (Elliman blocked),
+Charlotte,listing OZ check,"4732 Tamiami Trl, Port Charlotte, FL 33980",oz_status,Charlotte Harbor US41 (near OZ; tract unverified),NOT in OZ ,
+Charlotte,listing OZ check,"16070 Tamiami Trail, Punta Gorda, FL 33955",oz_status,Punta Gorda US41 (tract unverified),NOT in OZ ,
+Charlotte,listing DOM,"16070 Tamiami Trail, Punta Gorda, FL 33955",days_on_market,77.0,78,
+Charlotte,listing OZ check,"10000 Tamiami Trail, Punta Gorda, FL 33950",oz_status,Punta Gorda US41/Jones Loop (tract unverified),NOT in OZ ,
+Charlotte,listing DOM,"10000 Tamiami Trail, Punta Gorda, FL 33950",days_on_market,167.0,172,
+Charlotte,listing price,"490 Tamiami Trail, Port Charlotte, FL 33953",list_price,400000,390000,"BASELINE CORRECTION: price was already $390,000 (reduced 2026-08-21); baseline showed $400,000"
+Charlotte,listing OZ check,"490 Tamiami Trail, Port Charlotte, FL 33953",oz_status,Port Charlotte US41 (tract unverified),NOT in OZ ,
+Charlotte,listing OZ check,"1900 Tamiami Trail #C-D, Punta Gorda, FL 33950",oz_status,Punta Gorda US41 (tract unverified),NOT in OZ ,
+Charlotte,listing new to tracker,"2901 Placida Rd, Englewood, FL 34224",list_price,,999999,IN OZ 12015030401; Active
+Charlotte,listing new to tracker,"2931 Placida Rd, Englewood, FL 34224",list_price,,2500000,IN OZ 12015030401; Active
+Charlotte,listing new to tracker,"2900 Placida Rd, Englewood, FL 34224",list_price,,1100000,IN OZ 12015030401; Pending
+Charlotte,listing new to tracker,"3060 Placida Rd, Englewood, FL 34224",list_price,,1950000,IN OZ 12015030401; Status unverified (Elliman blocked)
+Charlotte,listing new to tracker,"2440 Placida Rd, Englewood, FL 34224",list_price,,625000,IN OZ 12015030401; Listed (page schema says OutOfStock - confirm)
+Charlotte,listing new to tracker,"12691 State Road 31, Punta Gorda, FL 33982",list_price,,750000,IN OZ 12015010100; Active
+Charlotte,listing new to tracker,"21202-21234 Olean Blvd Unit 2S, Port Charlotte, FL 33952",list_price,,337000,IN OZ 12015020700; Active (stale-risk: Compass last updated 2024)
+Charlotte,Zillow coverage (new source),(summary),in-OZ Zillow listings,,652,52 with Zillow DOM<=7 (listed this week)
+Charlotte,Zillow new this week (DOM<=7),"2030 MARYLAND AVENUE, ENGLEWOOD, FL 34224",list_price,,146900.0,12015030401 Zillow (MANUFACTURED) https://www.zillow.com/homedetails/2030-Maryland-Ave-Englewood-FL-34224/43568357_zpid/
+Charlotte,Zillow new this week (DOM<=7),"1960 OREGON TRAIL #2B, ENGLEWOOD, FL 34224",list_price,,309900.0,12015030401 Zillow (CONDO) https://www.zillow.com/homedetails/1960-Oregon-Trl-UNIT-2B-Englewood-FL-34224/2074424470_zpid/
+Charlotte,Zillow new this week (DOM<=7),"3006 CARING WAY #431, PORT CHARLOTTE, FL 33952",list_price,,114000.0,12015020700 Zillow (CONDO) https://www.zillow.com/homedetails/3006-Caring-Way-APT-431-Port-Charlotte-FL-33952/43601426_zpid/
+Charlotte,Zillow new this week (DOM<=7),"21275 Austin AVE, PORT CHARLOTTE, FL 33952",list_price,,184500.0,12015020700 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/21275-Austin-Ave-Port-Charlotte-FL-33952/43560390_zpid/
+Charlotte,Zillow new this week (DOM<=7),"21314 AUSTIN AVENUE, PORT CHARLOTTE, FL 33952",list_price,,194900.0,12015020700 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/21314-Austin-Ave-Pt-Charlotte-FL-33952/43552384_zpid/
+Charlotte,Zillow new this week (DOM<=7),"21260 BRINSON AVENUE #303, PORT CHARLOTTE, FL 33952",list_price,,85000.0,12015020700 Zillow (CONDO) https://www.zillow.com/homedetails/21260-Brinson-Ave-APT-303-Port-Charlotte-FL-33952/43594203_zpid/
+Charlotte,Zillow new this week (DOM<=7),"49599 Bermont Rd, Punta Gorda, FL 33982",list_price,,215000.0,12015010100 Zillow (LOT) https://www.zillow.com/homedetails/49599-Bermont-Rd-Punta-Gorda-FL-33982/338676890_zpid/
+Charlotte,Zillow new this week (DOM<=7),"33782 OIL WELL ROAD, PUNTA GORDA, FL 33955",list_price,,29000.0,12015010100 Zillow (LOT) https://www.zillow.com/homedetails/33782-Oil-Well-Rd-Punta-Gorda-FL-33955/103132634_zpid/
+Charlotte,Zillow new this week (DOM<=7),"17331 Perry Ranch Rd, North Fort Myers, FL 33917",list_price,,475000.0,12015010100 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/17331-Perry-Ranch-Rd-North-Fort-Myers-FL-33917/43564213_zpid/
+Charlotte,Zillow new this week (DOM<=7),"8320 Riverside Dr #65, Punta Gorda, FL 33982",list_price,,55000.0,12015010100 Zillow (MANUFACTURED) https://www.zillow.com/homedetails/8320-Riverside-Dr-65-Punta-Gorda-FL-33982/455321084_zpid/
+Charlotte,Zillow new this week (DOM<=7),"27110 Jones Loop Rd #110, Punta Gorda, FL 33982",list_price,,180000.0,12015010100 Zillow (MANUFACTURED) https://www.zillow.com/homedetails/27110-Jones-Loop-Rd-110-Punta-Gorda-FL-33982/2054760542_zpid/
+Charlotte,Zillow new this week (DOM<=7),"5400 Riverside Dr #48, Punta Gorda, FL 33982",list_price,,45900.0,12015010100 Zillow (MANUFACTURED) https://www.zillow.com/homedetails/5400-Riverside-Dr-48-Punta-Gorda-FL-33982/2098521744_zpid/
+Charlotte,Zillow new this week (DOM<=7),"18150 BENDING WILLOW COURT, PUNTA GORDA, FL 33982",list_price,,749000.0,12015010100 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/18150-Bending-Willow-Ct-Punta-Gorda-FL-33982/103098610_zpid/
+Charlotte,Zillow new this week (DOM<=7),"44513 Frontier Dr, Punta Gorda, FL 33982",list_price,,475000.0,12015010100 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/44513-Frontier-Dr-Punta-Gorda-FL-33982/452695124_zpid/
+Charlotte,Zillow new this week (DOM<=7),"16971 Shamrock RD, PUNTA GORDA, FL 33982",list_price,,599990.0,12015010100 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/16971-Shamrock-Rd-Punta-Gorda-FL-33982/450847134_zpid/
+Charlotte,Zillow new this week (DOM<=7),"16950 Harlequin CT, PUNTA GORDA, FL 33982",list_price,,349990.0,12015010100 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/16950-Harlequin-Ct-Punta-Gorda-FL-33982/347261942_zpid/
+Charlotte,Zillow new this week (DOM<=7),"44394 Kelly DR, PUNTA GORDA, FL 33982",list_price,,429990.0,12015010100 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/44394-Kelly-Dr-Punta-Gorda-FL-33982/450847698_zpid/
+Charlotte,Zillow new this week (DOM<=7),"Belmont Plan, Sabal Glen at Babcock Ranch : Americana Series",list_price,,279999.0,12015010100 Zillow (SINGLE_FAMILY) https://www.zillow.com/community/sabal-glen-at-babcock-ranch-americana-series/460765679_zpid/
+Charlotte,Zillow new this week (DOM<=7),"15734 Rosebud Ct, Punta Gorda, FL 33982",list_price,,759900.0,12015010100 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/15734-Rosebud-Ct-Punta-Gorda-FL-33982/450843962_zpid/
+Charlotte,Zillow new this week (DOM<=7),"44604 Palm Frond Dr, Punta Gorda, FL 33982",list_price,,449000.0,12015010100 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/44604-Palm-Frond-Dr-Punta-Gorda-FL-33982/450844818_zpid/
+Charlotte,Zillow new this week (DOM<=7),"44479 Cable Creek Dr, Punta Gorda, FL 33982",list_price,,344990.0,12015010100 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/44479-Cable-Creek-Dr-Punta-Gorda-FL-33982/458905946_zpid/
+Charlotte,Zillow new this week (DOM<=7),"44283 Panther Dr, Punta Gorda, FL 33982",list_price,,347000.0,12015010100 Zillow (MULTI_FAMILY) https://www.zillow.com/homedetails/44283-Panther-Dr-Punta-Gorda-FL-33982/2053537903_zpid/
+Charlotte,Zillow new this week (DOM<=7),"15203 Jadestone Dr, Punta Gorda, FL 33982",list_price,,669900.0,12015010100 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/15203-Jadestone-Dr-Punta-Gorda-FL-33982/453017516_zpid/
+Charlotte,Zillow new this week (DOM<=7),"14545 Jadestone Dr, Punta Gorda, FL 33982",list_price,,303999.0,12015010100 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/14545-Jadestone-Dr-Punta-Gorda-FL-33982/466228181_zpid/
+Charlotte,Zillow new this week (DOM<=7),"Washingtonia Plan, Tuckers Cove at Babcock Ranch : Manor Homes",list_price,,586999.0,12015010100 Zillow (SINGLE_FAMILY) https://www.zillow.com/community/tuckers-cove-at-babcock-ranch-manor-homes/442146972_zpid/
+Charlotte,Zillow new this week (DOM<=7),"Majestica Plan, Tuckers Cove at Babcock Ranch : Manor Homes",list_price,,537999.0,12015010100 Zillow (SINGLE_FAMILY) https://www.zillow.com/community/tuckers-cove-at-babcock-ranch-manor-homes/442146975_zpid/
+Charlotte,Zillow new this week (DOM<=7),"14985 Anchorage Rd, Punta Gorda, FL 33982",list_price,,537500.0,12015010100 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/14985-Anchorage-Rd-Punta-Gorda-FL-33982/458907878_zpid/
+Charlotte,Zillow new this week (DOM<=7),"15719 Northridge Rd, Punta Gorda, FL 33982",list_price,,689990.0,12015010100 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/15719-Northridge-Rd-Punta-Gorda-FL-33982/450845225_zpid/
+Charlotte,Zillow new this week (DOM<=7),"Coquina Plan, Webbs Reserve at Babcock Ranch : Estate Homes",list_price,,730999.0,12015010100 Zillow (SINGLE_FAMILY) https://www.zillow.com/community/webbs-reserve-at-babcock-ranch-estate-homes/442146285_zpid/
+Charlotte,Zillow new this week (DOM<=7),"Birkdale Plan, Webbs Reserve at Babcock Ranch : Terrace Condominiums",list_price,,234499.0,12015010100 Zillow (TOWNHOUSE) https://www.zillow.com/community/webbs-reserve-at-babcock-ranch-terrace-condominiums/442146288_zpid/
+Charlotte,Zillow new this week (DOM<=7),"15495 Green Acres Ave #2616, Punta Gorda, FL 33982",list_price,,270147.0,12015010100 Zillow (TOWNHOUSE) https://www.zillow.com/homedetails/15495-Green-Acres-Ave-2616-Punta-Gorda-FL-33982/466181466_zpid/
+Charlotte,Zillow new this week (DOM<=7),"33431 SERENE DRIVE LOT 23, PUNTA GORDA, FL 33982",list_price,,305000.0,12015010100 Zillow (LOT) https://www.zillow.com/homedetails/33431-Serene-Dr-23-Punta-Gorda-FL-33982/347757082_zpid/
+Charlotte,Zillow new this week (DOM<=7),"42500 Timber Walk TRL, PUNTA GORDA, FL 33982",list_price,,625000.0,12015010100 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/42500-Timber-Walk-Trl-Punta-Gorda-FL-33982/246827443_zpid/
+Charlotte,Zillow new this week (DOM<=7),"16152 Palmetto St, Punta Gorda, FL 33982",list_price,,1100000.0,12015010100 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/16152-Palmetto-St-Punta-Gorda-FL-33982/246828164_zpid/
+Charlotte,Zillow new this week (DOM<=7),"DELRAY Plan, Palmetto Landing at Babcock Ranch - Tradition",list_price,,405990.0,12015010100 Zillow (SINGLE_FAMILY) https://www.zillow.com/community/palmetto-landing-at-babcock-ranch-tradition/457398117_zpid/
+Charlotte,Zillow new this week (DOM<=7),"42058 Journey Dr, Punta Gorda, FL 33982",list_price,,483000.0,12015010100 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/42058-Journey-Dr-Punta-Gorda-FL-33982/332982324_zpid/
+Charlotte,Zillow new this week (DOM<=7),"Spruce Plan, Northridge at Babcock Ranch",list_price,,409990.0,12015010100 Zillow (SINGLE_FAMILY) https://www.zillow.com/community/northridge-at-babcock-ranch/2062796090_zpid/
+Charlotte,Zillow new this week (DOM<=7),"Astoria Plan, Verde at Babcock Ranch",list_price,,486990.0,12015010100 Zillow (SINGLE_FAMILY) https://www.zillow.com/community/verde-at-babcock-ranch/448495728_zpid/
+Charlotte,Zillow new this week (DOM<=7),"Charlotte Plan, The Sanctuary - Royal Collection",list_price,,529900.0,12015010100 Zillow (SINGLE_FAMILY) https://www.zillow.com/community/sanctuary-royal-collection/455211913_zpid/
+Charlotte,Zillow new this week (DOM<=7),"Sawgrass Plan, Regency at Babcock Ranch - Lago Collection",list_price,,424995.0,12015010100 Zillow (SINGLE_FAMILY) https://www.zillow.com/community/regency-at-babcock-ranch-lago-collection/458839203_zpid/
+Charlotte,Zillow new this week (DOM<=7),"15808 Elina Sky Dr, Punta Gorda, FL 33982",list_price,,484990.0,12015010100 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/15808-Elina-Sky-Dr-Punta-Gorda-FL-33982/450843975_zpid/
+Charlotte,Zillow new this week (DOM<=7),"43984 Boardwalk Loop #1713, Punta Gorda, FL 33982",list_price,,319900.0,12015010100 Zillow (CONDO) https://www.zillow.com/homedetails/43984-Boardwalk-Loop-1713-Punta-Gorda-FL-33982/2057654118_zpid/
+Charlotte,Zillow new this week (DOM<=7),"15803 Appalachian Dr, Punta Gorda, FL 33982",list_price,,575000.0,12015010100 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/15803-Appalachian-Dr-Punta-Gorda-FL-33982/2063157500_zpid/
+Charlotte,Zillow new this week (DOM<=7),"Sweetwater Plan, The Sanctuary - Resort Collection",list_price,,419990.0,12015010100 Zillow (SINGLE_FAMILY) https://www.zillow.com/community/sanctuary-resort-collection/455177239_zpid/
+Charlotte,Zillow new this week (DOM<=7),"43050 Greenway Blvd #645, Punta Gorda, FL 33982",list_price,,243500.0,12015010100 Zillow (CONDO) https://www.zillow.com/homedetails/43050-Greenway-Blvd-645-Punta-Gorda-FL-33982/2053187278_zpid/
+Charlotte,Zillow new this week (DOM<=7),"16209 Bluestem Ln, Punta Gorda, FL 33982",list_price,,529000.0,12015010100 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/16209-Bluestem-Ln-Punta-Gorda-FL-33982/246827611_zpid/
+Charlotte,Zillow new this week (DOM<=7),"Jupiter Plan, The Sanctuary - Royal Collection",list_price,,606990.0,12015010100 Zillow (SINGLE_FAMILY) https://www.zillow.com/community/sanctuary-royal-collection/455177234_zpid/
+Charlotte,Zillow new this week (DOM<=7),"15999 Grassland Ln #3221, Punta Gorda, FL 33982",list_price,,449900.0,12015010100 Zillow (CONDO) https://www.zillow.com/homedetails/15999-Grassland-Ln-3221-Punta-Gorda-FL-33982/2060891550_zpid/
+Charlotte,Zillow new this week (DOM<=7),"16133 Shoreline DR, PUNTA GORDA, FL 33982",list_price,,1349500.0,12015010100 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/16133-Shoreline-Dr-Punta-Gorda-FL-33982/2064335213_zpid/
+Charlotte,Zillow new this week (DOM<=7),"16160 Bluestem LN, PUNTA GORDA, FL 33982",list_price,,749000.0,12015010100 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/16160-Bluestem-Ln-Punta-Gorda-FL-33982/246828294_zpid/
+Charlotte,Zillow new this week (DOM<=7),"16365 PRESERVATION BOULEVARD, PUNTA GORDA, FL 33982",list_price,,725000.0,12015010100 Zillow (SINGLE_FAMILY) https://www.zillow.com/homedetails/16365-Preservation-Blvd-Punta-Gorda-FL-33982/353146251_zpid/
+Charlotte,Zillow new this week (DOM<=7),"Juniper Plan, The Sanctuary - Resort Collection",list_price,,527990.0,12015010100 Zillow (SINGLE_FAMILY) https://www.zillow.com/community/sanctuary-resort-collection/455177232_zpid/

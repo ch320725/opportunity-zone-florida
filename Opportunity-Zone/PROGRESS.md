@@ -14,3 +14,13 @@ Lee local OZ layer (7 named areas, no GEOIDs): https://services2.arcgis.com/LvWG
 Spatial intersect of each OZ tract polygon; DOR codes 00,10,11-39,40-49,70; >=0.25 ac; sorted by acreage desc, top 60 per tract. corridor_notes = street-name match on site address.
 ## Rows: Lee 504, Collier 266, Charlotte 180 (see pull_log.txt). Script: pull.py
 ## Gaps: Collier/Charlotte zoning blank; sale date month-level only (FDOR); tracts capped at 60 rows; no corridor-buffer queries outside OZs yet.
+
+## 2026-10-26 weekly run
+- Snapshots of the 10-25 outputs are in `<County>/history/2026-10-25/`. The dated weekly copy is in `<County>/weekly/2026-10-26/`.
+- `pull.py` v2026-10-26 adds just_value, prior sale, sale_history, owner_mail, lat/lon, and more corridor names.
+- `charlotte_zoning.py` fills Charlotte zoning from agis3.charlottecountyfl.gov CCGISLayers MapServer layers 43 and 29 (point-in-polygon; needs a User-Agent header).
+- Collier zoning is still a GAP: no public REST endpoint was found. The SWFWMD ZONING field is entirely null.
+- `ozgeo.py` checks whether an address is in an OZ: Census geocoder (or county parcel coordinates), then point-in-polygon against oz_geom.geojson.
+- `zillow_scan.py` runs a Zillow map-bounds search per tract, quad-splits when there are more than 123 results, and keeps only listings whose coordinates fall inside the polygon. It writes zillow_oz_<date>.csv.
+- `curated_listings.py` holds the hand-verified listings. `build.py` writes the for_sale CSVs, the WoW diff, the xlsx and the weekly copies.
+- FDOR duplicate parcel records are de-duplicated by tract_geoid and parcel_id.
