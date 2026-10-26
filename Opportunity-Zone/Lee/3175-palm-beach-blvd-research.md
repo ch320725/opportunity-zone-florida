@@ -68,3 +68,37 @@ Corridor is an established used-car row — good fit for a dealership.
 - **Taxes/delinquency (both folios):** NOT retrieved. Lee Tax Collector search (lee.county-taxes.com, Grant Street) returns HTTP 403 Cloudflare "Just a moment" challenge to curl. Needs browser: https://lee.county-taxes.com/public/search/property_tax?search_query=10245383 and ...=10245384. No balances/certificates known.
 - **Code enforcement:** NOT retrieved. fortmyers.elaws.us timed out (no connection). Needs browser or call City Code Enforcement 239-321-7940.
 - **BTR / permits:** NOT retrieved. Lee TC business-tax search also Cloudflare 403; City BTR & EnerGov are JS apps — needs browser.
+
+## 2026-10-26 browser follow-up (tax, code, licenses)
+
+Source: Lee Tax Collector (county-taxes.net) and City of Fort Myers EnerGov self-service, via browser 2026-10-26.
+
+### Tax — 3175 Palm Beach Blvd
+- Folio 10245383; account 07-44-25-P4-00107.0040; owner ROMAN FELIPE A JR
+- Total due: $4,934.43 back taxes; contact 239-533-6000
+- 2025 Annual: Unpaid $4,934.43
+- Certificate #2610502 issued 05/20/2026, face $4,693.50, rate 0.25%, active
+- 2024: paid $3,802.61 on 03/07/2025
+- 2023: paid $3,945.58 on 03/07/2025 (cert #2410217 redeemed)
+- Pattern of prior certificates redeemed 2015-2022
+- Related TPP BB 00 1286 31 CARISMA AUTO BROKERS INC / LUIS A NUNEZ: $0 due; 2014 bill paid
+
+### Tax — 3173 Palm Beach Blvd
+- Folio 10245384; account 07-44-25-P4-00107.0340; owner ROMAN FELIPE JR
+- "Tax Deed Application filed" banner; bill details unavailable
+- Years 2012-2025 shown as Not Available / Urgent: nonpayment may lead to property loss
+- Contact: taxservices@leetc.com
+
+### Code enforcement — 3175
+- Open, Liened: COD-040985-2025 and COD-040988-2025, opened 03/04/2025 (maintenance/parking resurface; trash)
+- Closed cases include food truck (Molcajete), signs, exterior, expired BTR
+- elaws unreachable; EnerGov used; fines not shown; 7 of 27 cases unread
+
+### Code enforcement — 3173
+- 22 closed cases; unsafe structure demo closed 2021; no open cases
+
+### Licenses / permits
+- 3175 (EnerGov): BUS2017-01028 MOLCAJETE HIDELGO — Past Due; closed used-vehicle BTRs: Huge Auto, Carisma, Belaire, World Auto
+- Lee County BTR search: no current license
+- Permits: fence/sign closed/finaled
+- 3173: demolitions finaled 2014; no licenses
