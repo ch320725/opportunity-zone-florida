@@ -1,7 +1,9 @@
-# Build 2026-10-26 weekly outputs: for_sale CSVs, WoW diff, xlsx, wow md.
+# Build 2026-11-02 weekly outputs (v2026-11-02: full listing diff incl. Zillow rows, just_value diff, Zillow coverage caveats): for_sale CSVs, WoW diff, xlsx, wow md.
 import pandas as pd, json, re, os, shutil, datetime as dt
 from curated_listings import L
-D='2026-10-26'; B='2026-10-25'
+D='2026-11-02'; B='2026-10-26'
+COV=json.load(open(f'zillow_coverage_{D}.json'))  # {'incomplete_tracts':[...]}
+INC=set(COV.get('incomplete_tracts',[]))
 C={'Lee':'lee','Collier':'collier','Charlotte':'charlotte'}
 tr=json.load(open('oz-tracts.json'))['counties']
 cty_of={g:c for c,gs in tr.items() for g in gs}
@@ -14,8 +16,9 @@ def norm(a):
 def money(s):
     s=str(s); m=re.sub(r'[^\d.]','',s)
     return float(m) if m else None
-COLS=['county','oz_tract','oz_status','status','address','list_price','beds','baths','sqft','lot_size','days_on_market','agent_name','agent_phone','agent_email','source','listing_url','verified_date','verify_method','notes']
+COLS=['county','oz_tract','oz_status','status','address','list_price','beds','baths','sqft','lot_size','days_on_market','agent_name','agent_phone','agent_email','source','listing_url','verified_date','verify_method','verify_2026_11_02','notes']
 cur=pd.DataFrame(L); cur['verified_date']=D
+cur.loc[cur.verify_2026_11_02.eq('not re-checked 2026-11-02'),'verified_date']=B+' (not re-checked '+D+')'
 cur['verify_method']=cur.oz_status.map(lambda s:'county parcel coords + OZ polygon' if 'parcel' in s else ('Census geocode + OZ polygon' if s.startswith(('IN','NOT')) else ''))
 z=pd.read_csv(f'zillow_oz_{D}.csv',dtype={'tract':str})
 z['county']=z.tract.map(cty_of)
@@ -23,7 +26,7 @@ z=z[z.price.map(lambda p:(money(p) or 0)>0)]   # drop $0 auction placeholders
 zz=pd.DataFrame(dict(county=z.county,oz_tract=z.tract,oz_status='IN OZ (Zillow coords)',status=z.status,address=z.address,
    list_price=z.price.map(money),beds=z.beds,baths=z.baths,sqft=z.sqft,lot_size=z.lot,days_on_market=z.dom,
    agent_name=z.broker,agent_phone='',agent_email='',source='Zillow ('+z.home_type.fillna('')+')',listing_url=z.url,
-   verified_date=D,verify_method='Zillow lat/lon + OZ polygon',notes=''))
+   verified_date=D,verify_method='Zillow lat/lon + OZ polygon',verify_2026_11_02='Zillow map search '+D,notes=''))
 cur['k']=cur.address.map(norm); zz['k']=zz.address.map(norm)
 # enrich curated rows with Zillow URL/DOM where duplicate, then drop dup from zillow set
 for i,r in cur.iterrows():
@@ -72,10 +75,10 @@ for c,lc in C.items():
     for pid in o.index.difference(n.index): w(c,'parcel dropped',pid,'',o.at[pid,'address'],None)
     zfill=0
     for pid in n.index.intersection(o.index):
-        for f in ['owner','assessed_value','acreage','last_sale_date','last_sale_price','zoning']:
+        for f in ['owner','assessed_value','just_value','acreage','last_sale_date','last_sale_price','zoning']:
             a,b=o.at[pid,f],n.at[pid,f]
             if pd.isna(a) and pd.isna(b): continue
-            if f in('assessed_value','acreage','last_sale_price'):
+            if f in('assessed_value','just_value','acreage','last_sale_price'):
                 try:
                     if abs(float(a)-float(b))<1e-6: continue
                 except: pass
@@ -87,35 +90,49 @@ for c,lc in C.items():
     a_,b_=set(os_.parcel_id),set(S[c].parcel_id)
     w(c,'shortlist','(summary)','unique parcels',len(a_),len(b_),f'+{len(b_-a_)} / -{len(a_-b_)}; rows {len(os_)} -> {len(S[c])} after de-duplicating FDOR duplicate records')
     w(c,'parcels','(summary)','rows',RAW[c][0],len(P[c]),f'unique parcel_id+tract; {len(o)} unique in baseline')
-    # listings
-    ol=pd.read_csv(f'{c}/history/{B}/{lc}_for_sale.csv'); ol['k']=ol.address.map(norm)
-    cc=cur[cur.county==c]
+    # listings: compare every row of last week's for_sale file (curated + Zillow) with this week's
+    def lk(r):
+        m=re.search(r'(\d+)_zpid',str(r.listing_url)) if str(r.source).startswith('Zillow') else None
+        return 'Z'+m.group(1) if m else norm(r.address)
+    ol=pd.read_csv(f'{c}/history/{B}/{lc}_for_sale.csv',dtype={'oz_tract':str}); ol['lk']=ol.apply(lk,axis=1)
+    cc=allfs[allfs.county==c].copy(); cc['lk']=cc.apply(lk,axis=1)
+    # Zillow rows can also match a curated row by address
+    ozk=set(cc.lk)|set(cc.k); idx={**{k:i for i,k in zip(cc.index,cc.k)},**{k:i for i,k in zip(cc.index,cc.lk)}}
+    nrem=nnew=npc=0
     for _,r in ol.iterrows():
-        m=cc[cc.k==r.k]
-        if not len(m): w(c,'listing removed',r.address,'',r.list_price,None,'not found'); continue
-        m=m.iloc[0]
+        i=idx.get(r.lk, idx.get(norm(r.address)))
+        isz=str(r.source).startswith('Zillow')
+        if i is None:
+            if isz:
+                cat='Zillow listing not seen (scan incomplete in tract)' if str(r.oz_tract) in INC else 'Zillow listing gone (sold / pending / withdrawn)'
+            else: cat='listing removed'
+            w(c,cat,r.address,'list_price',r.list_price,None,f"{r.oz_tract} {r.source} {r.listing_url}"); nrem+=cat!='Zillow listing not seen (scan incomplete in tract)'; continue
+        m=cc.loc[i]
         if pd.notna(r.list_price) and money(m.list_price) and abs(float(r.list_price)-money(m.list_price))>1:
-            w(c,'listing price',r.address,'list_price',r.list_price,m.list_price,m.notes)
-        if not str(m.status).startswith('Active'): w(c,'listing status',r.address,'status','listed',m.status,'')
-        w(c,'listing OZ check',r.address,'oz_status',r.tract_geoid_or_area,f"{m.oz_status} {m.oz_tract}",'')
-        if pd.notna(r.days_on_market) and str(m.days_on_market) not in('','nan'):
-            w(c,'listing DOM',r.address,'days_on_market',r.days_on_market,m.days_on_market,'')
-    for _,m in cc[~cc.k.isin(ol.k)].iterrows():
-        w(c,'listing new to tracker',m.address,'list_price',None,m.list_price,f"{m.oz_status} {m.oz_tract}; {m.status}")
+            w(c,'listing price',r.address,'list_price',r.list_price,m.list_price,f"{m.oz_tract} {m.source}; {str(m.notes)[:200]}"); npc+=1
+        if str(r.status)!=str(m.status) and not (str(r.status).startswith('Active') and str(m.status).startswith('Active')):
+            w(c,'listing status',r.address,'status',r.status,m.status,str(m.verify_2026_11_02))
+        if r.bucket!=m.bucket: w(c,'listing bucket',r.address,'bucket',r.bucket,m.bucket,'')
+    seen=set(ol.lk)|set(ol.address.map(norm))
+    for _,m in cc.iterrows():
+        if m.lk in seen or m.k in seen: continue
+        nnew+=1
+        w(c,'listing new (Zillow, in OZ)' if str(m.source).startswith('Zillow') else 'listing new to tracker',m.address,'list_price',None,m.list_price,
+          f"{m.oz_tract} {m.source}; DOM {m.days_on_market}; {m.status}; {m.listing_url}")
     zc=zz[zz.county==c]
-    zn=zc[pd.to_numeric(zc.days_on_market,errors='coerce')<=7]
-    w(c,'Zillow coverage (new source)','(summary)','in-OZ Zillow listings',None,len(zc),f'{len(zn)} with Zillow DOM<=7 (listed this week)')
-    for _,m in zn.iterrows(): w(c,'Zillow new this week (DOM<=7)',m.address,'list_price',None,m.list_price,f"{m.oz_tract} {m.source} {m.listing_url}")
+    w(c,'Zillow coverage','(summary)','in-OZ Zillow listings',int(ol.source.astype(str).str.startswith('Zillow').sum()),len(zc),
+      ('incomplete tracts: '+','.join(sorted(t for t in INC if cty_of.get(t)==c))) if any(cty_of.get(t)==c for t in INC) else 'all tracts scanned')
+    w(c,'listings','(summary)','new / gone / price changes',None,f'{nnew} / {nrem} / {npc}','')
 WW=pd.DataFrame(W)
 # ---------- xlsx ----------
 readme=[['Southwest Florida Opportunity Zone scan',D],['Counties','Lee (15 tracts), Collier (5), Charlotte (3) - 2010-tract QOZ designations (OZ 1.0, in effect through 2028-12-31)'],
  ['Parcels','Lee: Lee County Parcels MapServer; Collier & Charlotte: FDOR Florida Statewide Cadastral. Spatial intersect with each OZ tract; DOR use filter, >=0.25 ac, top 60/tract by acreage'],
- ['Charlotte zoning','NEW: filled via point-in-polygon on Charlotte County agis3 CCGISLayers layers 43/29'],
+ ['Charlotte zoning','Filled via point-in-polygon on Charlotte County agis3 CCGISLayers layers 43/29'],
  ['Collier zoning','GAP: no public Collier zoning REST endpoint found'],
  ['Shortlist','Rules unchanged from 2026-10-25 (vacant comm/ind, corridor, size, priority score). listed_now = currently listed in-OZ listing matched by address'],
  ['ForSale','bucket: in OZ - active / pending / status unverified / removed-sold / near-OZ reference. OZ check = point-in-polygon of listing coords (Census geocoder, county parcel coords, or Zillow lat/lon) vs OZ tract polygons'],
- ['ForSale sources','Curated: Coldwell Banker, realty.com, Crexi, TotalCommercial, RI Marketplace, CommercialSearch, Suncoast, raveis, keysofsarasota, Trinity CRE. Systematic: Zillow map-bounds per tract (quad-split)'],
- ['Gaps','LoopNet 403 (status of LoopNet-only listings unverified); Realtor.com 429; Douglas Elliman captcha; theguillettegroup 429; realmo curl 403; Zillow shows brokerage only (no agent phone/email) and excludes most commercial-only listings'],
+ ['ForSale sources','Curated: Coldwell Banker, realty.com, Crexi, TotalCommercial, RI Marketplace, CommercialSearch, Suncoast, raveis, keysofsarasota, Trinity CRE. Systematic: Zillow map-bounds per tract (quad-split). Curated rows re-verified 2026-11-02: see verify_2026_11_02 column'],
+ ['Gaps',f"2026-11-02: LoopNet 403, Crexi 403, Suncoast 403, realmo 403, CommercialSearch 403, Redfin API 403 (CloudFront), trinitycre fetch failed; Zillow captcha during part of the scan (incomplete tracts: {', '.join(sorted(INC)) or 'none'}). Zillow search rows show brokerage only; Zillow excludes most commercial-only listings"],
  ['WoW baseline',f'{B} snapshots in <County>/history/{B}/']]
 with pd.ExcelWriter(f'oz-scan-{D}.xlsx',engine='openpyxl') as x:
     pd.DataFrame(readme,columns=['item','detail']).to_excel(x,sheet_name='README',index=False)

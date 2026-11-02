@@ -1,0 +1,4 @@
+{
+ "incomplete_tracts": [],
+ "note": "pass1 (09:15-09:24) hit Zillow captcha on 49 pages in 5 tracts; those 5 tracts fully re-scanned in pass2 (09:29-09:48) with retry/backoff. Only remaining \"failure\" was a page-2 request for a sub-box with exactly 41 results (no page 2 exists; HTTP 301), so coverage is complete."
+}

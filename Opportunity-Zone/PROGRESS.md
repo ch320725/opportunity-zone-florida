@@ -24,3 +24,14 @@ Spatial intersect of each OZ tract polygon; DOR codes 00,10,11-39,40-49,70; >=0.
 - `zillow_scan.py` runs a Zillow map-bounds search per tract, quad-splits when there are more than 123 results, and keeps only listings whose coordinates fall inside the polygon. It writes zillow_oz_<date>.csv.
 - `curated_listings.py` holds the hand-verified listings. `build.py` writes the for_sale CSVs, the WoW diff, the xlsx and the weekly copies.
 - FDOR duplicate parcel records are de-duplicated by tract_geoid and parcel_id.
+
+## 2026-11-02 weekly run
+- The 10-26 outputs were snapshotted to `<County>/history/2026-10-26/`, and the dated copy is in `<County>/weekly/2026-11-02/`.
+- `pull.py` (unchanged) gave the same per-tract counts. `charlotte_zoning.py` and `shortlist.py` were re-run.
+- `zillow_scan.py` v2026-11-02 takes `OUTFILE [tract ...]` as arguments and retries with backoff when Zillow serves a captcha.
+  - Pass 1 was blocked on 5 tracts. Those tracts were re-run in pass 2, then the passes were merged into `zillow_oz_2026-11-02.csv` (3,438 rows).
+  - Coverage notes are in `zillow_coverage_2026-11-02.json`.
+- `zillow_detail.py` (new) reads a Zillow property page by address or URL and returns status, price, DOM, agent, phone, MLS and lat/lon. It was used to re-verify the curated rows (`verify_2026-11-02/zillow_verify.json`).
+- `curated_listings.py` now holds base records (`curated_listings_2026_10_26.py`) plus the changes confirmed on 2026-11-02. A new `verify_2026_11_02` column gives the source for each row.
+- `build.py` v2026-11-02 diffs the full listing set (curated plus Zillow, by zpid or address), adds just_value to the parcel diff, and flags Zillow coverage gaps. The previous version is `build_2026-10-26.py`.
+- Results are in wow-2026-11-02.md. Parcels: 0 adds or drops, 1 Lee owner change, no value changes. Listings: Lee 114 new / 137 gone / 111 price changes; Collier 12/9/6; Charlotte 41/38/25. 3092 Tamiami was removed.
